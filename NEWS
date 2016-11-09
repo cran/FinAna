@@ -1,0 +1,17 @@
+R News:
+
+FinAna 0.1.0
+=================================
+Released 2016-Nov-8
+
+First offcial release of FinAna R Package.
+Analysis tools for regression analysis and financial analysis.
+The package allows batch graphs generation, descriptive statistics, stock beta calculation, and so on.
+
+*ploth
+*ploths
+*desc
+*betaf
+*corm
+
+Future improvement will be made in: Downloading web data directly into R, Robust regression methods and potentially portfolio management tools
