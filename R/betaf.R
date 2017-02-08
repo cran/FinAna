@@ -9,8 +9,8 @@
 #' @usage betaf(x,y,method)
 #' @param x :a vector or a data.frame of rate of return of companies
 #' @param y :name of the independent variable
-#' @param method: method of calculation; method = 1 for a common expression of beta(see detail); method = 2 using linear regression to estimate the beta
-#' @examples betaf(aapl,sp500)
+#' @param method :method of calculation; method = 1 for a common expression of beta(see detail); method = 2 using linear regression to estimate the beta
+#' @examples #betaf(appl,sp500)
 
 
 betaf <- function(x,y,method){

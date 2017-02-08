@@ -15,6 +15,6 @@ ploth(x,c)
 Plotting histograms for a data.frame. Also the function will name the graphs and number the graphs.
 }
 \examples{
-# ploth(sp500,0)
+#ploth(sp500,0) for histograms of sp500 which does not has dummy variables
 }
 

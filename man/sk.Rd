@@ -9,12 +9,12 @@ sk(x, type = 3)
 \arguments{
 \item{x}{:a numeric variable}
 
-\item{type}{: type = 1 for mode skewness; type = 2 for median skewness; type = 3 for mean skewness}
+\item{type}{:type = 1 for mode skewness; type = 2 for median skewness; type = 3 for mean skewness}
 }
 \description{
 Calculating Pearson's skewness in three types: mode, median, and mean
 }
 \examples{
-# sk(return)
+#sk(return) for skewness of variable return
 }
 

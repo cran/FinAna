@@ -1,4 +1,5 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("graphics", "abline", "hist", "lines", "plot")
 importFrom("stats", "as.ts", "cor", "cov", "density", "lag", "lm",
-            "median", "na.action", "na.omit", "sd", "ts.plot", "var")
+            "median", "na.action", "na.omit", "sd", "ts.plot", "var","scatter.smooth")
+importFrom("utils", "read.csv")

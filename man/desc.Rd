@@ -13,6 +13,6 @@ desc(x)
 Calculating the descriptive statistics of a data.frame and exporting in a data.frame
 }
 \examples{
-# desc(sp1500)
+#desc(sp1500) for descriptive statistics of sp1500
 }
 

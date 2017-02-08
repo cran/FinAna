@@ -13,6 +13,6 @@ corm(x)
 Calculating the descriptive statistics of a data.frame and exporting in a data.frame
 }
 \examples{
-# corm(sp1500)
+#corm(sp1500) for correlation matrix of sp1500
 }
 

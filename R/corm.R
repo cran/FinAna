@@ -8,12 +8,12 @@
 #' @description Calculating the descriptive statistics of a data.frame and exporting in a data.frame
 #' @usage corm(x)
 #' @param x :a data.frame
-#' @examples corm(sp1500) for correlation matrix of sp1500
+#' @examples #corm(sp1500) for correlation matrix of sp1500
 
 
 corm <- function(x){
   typeofvar <- sapply(x,class)
-  ha <- names(typeofvar[typeofvar == "numeric" | typeofvar == "integer"])
+  ha <- names(typeofvar[typeofvar == "numeric" | typeofvar == "integer" | typeofvar == "double"])
   x <- x[,c(ha)]
 
   cormatirx <-data.frame(cor(x, use = "na.or.complete"))

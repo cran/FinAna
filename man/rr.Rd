@@ -4,15 +4,17 @@
 \alias{rr}
 \title{Calculating rate of return of a vector}
 \usage{
-rr(x)
+rr(x,n)
 }
 \arguments{
 \item{x}{:a vector of company prices}
+
+\item{n}{: number of lags}
 }
 \description{
 Calculating the rate of return of a vector for further analysis, including calculating beta of companies, plotting to see the trend of the stock for technical analysis
 }
 \examples{
-# rr(aapl)
+#rr(aapl,1)
 }
 

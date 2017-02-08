@@ -11,14 +11,14 @@ ploths(x,a,dependent,c)
 
 \item{a}{:the type of graph you want; a = 1 for histograms; a = 2 for scatter plots; a = 0 for both}
 
-\item{c}{:is there dummy variable in the dataframe; c = 0 when there is none; c = 1 when there is}
+\item{dependent}{:the dependent variable for scatterplots}
 
-\item{dependent}{:the independent variable for scatterplots}
+\item{c}{:is there dummy variable in the dataframe; c = 0 when there is none; c = 1 when there is}
 }
 \description{
 Plotting histograms or scatter plots of your choice for a data.frame. Also the function will name the graphs and number them.The purpose of the function is to save time when plotting graphs for a regression analysis or other usage. The function can plot, name and number the graphs at one step.
 }
 \examples{
-# ploths(sp500,0,"price",0)
+#ploths(sp500,0,"price",0)
 }
 

@@ -8,7 +8,7 @@
 #' @description Kurtosis
 #' @usage kur(x)
 #' @param x :a numeric variable
-#' @examples kur(return) for skewness of variable return
+#' @examples #kur(return) for skewness of variable return
 
 
 kur <- function(x){

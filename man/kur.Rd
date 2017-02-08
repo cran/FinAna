@@ -13,6 +13,6 @@ kur(x)
 Kurtosis
 }
 \examples{
-# kur(return)
+#kur(return) for skewness of variable return
 }
 
