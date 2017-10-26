@@ -1,8 +1,25 @@
 R News:
 
-=================================
+==================================================================
+FinAna 0.1.2
+==================================================================
+2017-Oct-25
+
+Added
+Functions:
+        *ploths # added new parameter "l"
+        *ploth # added new parameter "l"
+        *plotsm # added new parameter "l"
+        *plotts # added new parameter "l"
+        *desc # added option to round
+        *corm # added option to round
+
+Bug fixed:
+NA added in descriptive statistics
+
+==================================================================
 FinAna 0.1.1
-=================================
+==================================================================
 2017-Feb-10
 
 Added:
@@ -20,9 +37,9 @@ Functions:
 Bug fixed:
 
 *fixed y label in ploths
-=================================
+==================================================================
 FinAna 0.1.0
-=================================
+==================================================================
 First Version 2016-Nov-8
 
 First offcial release of FinAna R Package.

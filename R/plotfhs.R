@@ -13,15 +13,16 @@
 #' @aliases ploths
 #' @title Plot histograms and scatter plots for a data.frame
 #' @description Plotting histograms or scatter plots of your choice for a data.frame. Also the function will name the graphs and number them.The purpose of the function is to save time when plotting graphs for a regression analysis or other usage. The function can plot, name and number the graphs at one step.
-#' @usage ploths(x,a,dependent,c)
+#' @usage ploths(x,a,dependent,c,l)
 #' @param x :a dataframe
 #' @param a :the type of graph you want; a = 1 for histograms; a = 2 for scatter plots; a = 0 for both
 #' @param dependent :the dependent variable for scatterplots
 #' @param c :is there dummy variable in the dataframe; c = 0 when there is none; c = 1 when there is
-#' @examples #ploths(sp500,0,"price",0)
+#' @param l : number of labeling starts at (default = 1)
+#' @examples #ploths(sp500,0,"price",0,20)
 
 
-ploths <- function(x,a,dependent,c){
+ploths <- function(x,a,dependent,c,l = 1){
 
   yl <- dependent
   dependent <- x[,dependent]
@@ -38,20 +39,20 @@ ploths <- function(x,a,dependent,c){
   n <- length(var)
 
   if (a == 1){
-    hist(dependent, main = paste("Fig.", paste(1, paste("Histogram of",dependent))), xlab = yl)
+    hist(dependent, main = paste("Fig.", paste(l, paste("Histogram of",dependent))), xlab = yl)
     for(i in 1:n){
-      hist(x[,i], main = paste("Fig.", paste(i+1, paste("Histogram of",var[i]))), xlab = var[i])
+      hist(x[,i], main = paste("Fig.", paste(i+l, paste("Histogram of",var[i]))), xlab = var[i])
     }
   }else if(a == 2){
     for(i in 1:n){
       plot(x[,i], dependent, main = paste("Fig.", paste(i, paste("Scatter Plot of",var[i]))), xlab = var[i], ylab = yl)
     }
   }else{
-    hist(dependent, main = paste("Fig.", paste(1, paste("Histogram of",dependent))), xlab = yl)
+    hist(dependent, main = paste("Fig.", paste(l, paste("Histogram of",dependent))), xlab = yl)
     for(i in 1:n){
-      hist(x[,i], main = paste("Fig.", paste(i+1, paste("Histogram of",var[i]))), xlab = var[i])}
+      hist(x[,i], main = paste("Fig.", paste(i+l, paste("Histogram of",var[i]))), xlab = var[i])}
     for(i in 1:n){
-      plot(x[,i], dependent, main = paste("Fig.", paste(i+n+1, paste("Scatter Plot of",var[i]))), xlab = var[i], ylab = yl)
+      plot(x[,i], dependent, main = paste("Fig.", paste(i+n+l, paste("Scatter Plot of",var[i]))), xlab = var[i], ylab = yl)
       }
   }
 }

@@ -17,4 +17,3 @@ Calculating Pearson's skewness in three types: mode, median, and mean
 \examples{
 #sk(return) for skewness of variable return
 }
-

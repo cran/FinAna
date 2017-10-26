@@ -19,4 +19,3 @@ Calculating beta using common method or linear regression(OLS)
 \examples{
 #betaf(appl,sp500)
 }
-

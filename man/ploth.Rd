@@ -4,17 +4,18 @@
 \alias{ploth}
 \title{Plot histograms for a data.frame}
 \usage{
-ploth(x,c)
+ploth(x,c,l)
 }
 \arguments{
 \item{x}{:a dataframe}
 
 \item{c}{:is there dummy variable in the data.frame; c = 0 when there is none; c = 1 when there is}
+
+\item{l}{: number of labeling starts at (default = 1)}
 }
 \description{
 Plotting histograms for a data.frame. Also the function will name the graphs and number the graphs.
 }
 \examples{
-#ploth(sp500,0) for histograms of sp500 which does not has dummy variables
+#ploth(sp500,0,20) for histograms of sp500 which does not has dummy variables
 }
-

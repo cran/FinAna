@@ -9,12 +9,13 @@
 #' @aliases plotts
 #' @title Plot time series plots for a data.frame
 #' @description Plotting time series plots for a data.frame, with name the graphs and number the graphs.
-#' @usage plotts(x,c)
+#' @usage plotts(x,c,l)
 #' @param x :a dataframe
 #' @param c :is there dummy variable in the data.frame; c = 0 when there is none; c = 1 when there is
-#' @examples #plotts(sp500,0)
+#' @param l : number of labeling starts at (default = 1)
+#' @examples #plotts(sp500,0,20)
 
-plotts <- function(x,c){
+plotts <- function(x,c,l = 1){
   typeofvar <- sapply(x,class)
   ha <- typeofvar[typeofvar == "numeric"]
   if(c == 1){
@@ -28,6 +29,6 @@ plotts <- function(x,c){
   var <- names(x)
   n <- length(var)
   for(i in 1:n){
-    ts.plot(x[,i], main = paste("Fig.", paste(i, paste("Time Series Plot of",var[i]))), ylab = var[i], xlab = "")
+    ts.plot(x[,i], main = paste("Fig.", paste(i+l-1, paste("Time Series Plot of",var[i]))), ylab = var[i], xlab = "")
   }
 }

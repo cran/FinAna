@@ -17,4 +17,3 @@ Calculating the rate of return of a vector for further analysis, including calcu
 \examples{
 #rr(aapl,1)
 }
-

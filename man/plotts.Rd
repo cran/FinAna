@@ -4,17 +4,18 @@
 \alias{plotts}
 \title{Plot time series plots for a data.frame}
 \usage{
-plotts(x,c)
+plotts(x,c,l)
 }
 \arguments{
 \item{x}{:a dataframe}
 
 \item{c}{:is there dummy variable in the data.frame; c = 0 when there is none; c = 1 when there is}
+
+\item{l}{: number of labeling starts at (default = 1)}
 }
 \description{
 Plotting time series plots for a data.frame, with name the graphs and number the graphs.
 }
 \examples{
-#plotts(sp500,0)
+#plotts(sp500,0,20)
 }
-

@@ -21,4 +21,3 @@ Calculate future value of an ordinary annuity or an annuity due.
 \examples{
 #annu.fv(100,0.0248,10,0)
 }
-

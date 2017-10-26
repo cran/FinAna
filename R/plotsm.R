@@ -3,7 +3,7 @@
 ##################################################################################################
 
 
-plotsm <- function(x,dependent,c){
+plotsm <- function(x,dependent,c,l = 1){
   x <- na.omit(x)
   yl <- dependent
   dependent <- x[,dependent]
@@ -22,6 +22,6 @@ plotsm <- function(x,dependent,c){
   n <- length(var)
   x <- as.data.frame(na.omit(x))
   for(i in 1:n){
-    scatter.smooth(x[,i],dependent, main = paste("Fig.", paste(i, paste("Scatter Plot of",var[i]))), xlab = var[i],ylab = yl)
+    scatter.smooth(x[,i],dependent, main = paste("Fig.", paste(i+l-1, paste("Scatter Plot of",var[i]))), xlab = var[i],ylab = yl)
   }
 }

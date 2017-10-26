@@ -4,15 +4,16 @@
 \alias{corm}
 \title{Correlation matrix and correlation ranking of a data.frame}
 \usage{
-corm(x)
+corm(x,n)
 }
 \arguments{
 \item{x}{:a data.frame}
+
+\item{n}{:number of decimal points}
 }
 \description{
 Calculating the descriptive statistics of a data.frame and exporting in a data.frame
 }
 \examples{
-#corm(sp1500) for correlation matrix of sp1500
+#corm(sp1500,3) for correlation matrix of sp1500
 }
-

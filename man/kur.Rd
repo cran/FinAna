@@ -15,4 +15,3 @@ Kurtosis
 \examples{
 #kur(return) for skewness of variable return
 }
-

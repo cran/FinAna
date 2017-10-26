@@ -4,15 +4,16 @@
 \alias{desc}
 \title{Descriptice statistics of a data.frame}
 \usage{
-desc(x)
+desc(x,n)
 }
 \arguments{
 \item{x}{:a data.frame}
+
+\item{n}{:number of decimal points}
 }
 \description{
 Calculating the descriptive statistics of a data.frame and exporting in a data.frame
 }
 \examples{
-#desc(sp1500) for descriptive statistics of sp1500
+#desc(sp1500,3) for descriptive statistics of sp1500
 }
-
